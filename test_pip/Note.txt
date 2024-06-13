@@ -1,0 +1,63 @@
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+https://www.youtube.com/watch?v=2kIZLDSX7fk
+
+python3 -m pip install --upgrade build
+python3 -m build
+python3 -m pip install --upgrade twine
+
+python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps example-package-ahmad.sharif
+
+
+
+python3 -m pip install --upgrade build
+pip install setuptools
+pip install build
+python3 -m build
+
+python3 -m build
+
+python3 -m pip install --upgrade twine
+
+python3 -m twine upload --repository testpypi dist/*
+
+
+pypi-AgENdGVzdC5weXBpLm9yZwIkM2VmMzc2OWItNDM5MC00ZmViLThiZTEtMTYxYWM2YjU0NzkyAAIqWzMsIjBmMmJkZjVkLTMxNGQtNDgxOS04NGRlLTYwNTMwNWZlNjYzMSJdAAAGIE9-BRlwfEb2pxoPELRM6EucVfI4YgRDz3mcTWDxK2ri
+
+https://test.pypi.org/project/test1014/0.0.1/
+
+pip install -i https://test.pypi.org/simple/ test1014==0.0.1
+
+
+
+
+test1014/
+├── test1014/  
+│   ├── __init__.py
+│   ├── main.py
+├── README.md
+├── setup.py
+├── pyproject.toml
+
+
+–––––––––– example.py
+def add_number(num):
+	return num + 1
+	
+	
+–––––––––– __init__.py 
+
+
+def main():
+    print("Hello from test1014!")
+
+if __name__ == "__main__":
+    main()
+    
+    
+    
+    
+pypi-AgENdGVzdC5weXBpLm9yZwIkNmQ3YjYxZWQtMWFhYy00OTExLTk2N2MtZTc4M2M2NjkxNTIwAAIQWzEsWyJ0ZXN0MTAxNCJdXQACLFsyLFsiY2E5YzU4M2ItZWU3NC00Y2E4LTg3MGEtMGE3OTc0NjdiZGQxIl1dAAAGIONJHWllm-I9ZI5Qv2-xykoWQf9fcIh64XhLeeFsrlY6
+
+
+https://www.youtube.com/watch?v=2kIZLDSX7fk
+
