@@ -26,3 +26,60 @@ Packages
 PIP
 Conda
 
+
+
+Template Code: 
+
+–––––––––––– Cli.py
+
+#!/usr/bin/python
+import argparse
+import sys
+
+
+class CLI:
+    def __init__(self, command):
+        getattr(self, command)()
+        print(command, '___________ Command ___________')
+
+    def find(self):
+        print("Hi")
+    
+    def stream(self):
+        for x in range(10):
+            print(x)
+
+
+
+–––––––––––– main.py 
+
+
+import argparse
+import sys
+
+from .cli import CLI
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Stream and visualize data from the Muse EEG headset.",
+        usage="""MuseBSL <command> [<args>]
+        """,
+    )
+
+    parser.add_argument("command", help="Command to run.")
+    args = parser.parse_args(sys.argv[1:2])
+
+
+    cli = CLI(args.command)
+
+
+if __name__ == "__main__":
+    main()
+
+
+
+I want to print in browser through python command line
+
+Test24 find
+Hi # In Browser localhost ?? How can I do this
